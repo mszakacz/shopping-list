@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+.main-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.main-header-wrapper > h1 {
+  font: italic normal 900 40px/50px monospace;
+  text-align: center;
+}
+
+.shopping-list-wrapper {
+  background-color:rgb(132, 198, 252);
+  padding: 20px;
+  border-radius: 10px;
+  border: #1b1620 solid 1px;
+  font-family: 'Dosis', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h3 {
+  padding-left: 40px;
+  text-decoration: underline;
+}
+
+hr {
+  margin-top: 40px;
+  height: 1px;
+}
+
+
+th {
+  padding-right: 150px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+
+#shop-list {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+  border: 1px solid #eee;
+  padding: 10px;
+  max-width: 400px;
+  margin: 5px auto;
+}
+
+#shop-add {
+
+  padding: 10px;
+  max-width: 500px;
+  margin: 5px auto;
+}
+
+.item-row, .item-name, .item-del, .item-ok, #shop-item-name, .list-item-qty {
+  box-sizing: border-box; 
+  border: 0;
+}
+.item-name, #shop-item-name, .list-item-qty {
+  background: #fff;
+  padding: 10px;
+}
+.item-del, .item-ok, #shop-add-btn {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* (B) SHOPPING LIST */
+.item-row {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+}
+.item-name { width: 50%; }
+.list-item-category { 
+  width: 20%;
+  vertical-align: middle; 
+}
+.list-item-qty {
+  width: 20%;
+  text-align: right;
+  padding-right: 20px;
+}
+.list-item-qtype {
+  width: 10%;
+}
+
+.item-name, .list-item-qty { background: #f5fffa; }
+
+
+.item-del { 
+  background: #de1919;
+  margin-left: 20px;
+  width: 80px;
+  border-radius: 10px; 
+  transition: 0.5s all;
+}
+.item-del:hover {
+  transform: scale(1.1);
+  background: #e7492d;
+}
+
+
+
+
+#shop-add-btn {
+  display: block;
+  width: 25%;
+  background: #5a75d6;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px auto;
+  margin-top: 40px;
+  transition: 0.5s all;
+}
+#shop-add-btn:hover {
+  transform: scale(1.1);
+  background: #2c52eb;
+}
+
+
+html, body { font-family: arial, sans-serif }
+
+
+
+.checked_item {
+  margin: auto 10px;
+  transform: scale(1.5);
+  transition: 0.5s all;
+}
+
+.checked_item:hover {
+  transform: scale(1.8);
+}
+
+.item-category {
+  width: 50px;
+  background-color: green;
+}
+
+.adding-item-wrapper {
+  margin-top: 20px;
+  background-color:aquamarine;
+  padding: 5px;
+  border-radius: 10px;
+  border: #1b1620 solid 1px;
+  margin-bottom: 50px;
+}
+
+.adding-inputs-wrapper {
+  display: grid;
+  padding: 0 40px;
+  grid-template-columns: 0.4fr 0.6fr;
+}
+
+.adding-inputs-wrapper > * {
+  height: 50px;
+  margin: 5px auto;
+  width: 90%;
+}
+.adding-inputs-wrapper > div > label{
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+
+.qty-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.qty-input > * {
+  width: 40%;
+}
+
+#item-qty {
+  width: 80px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lista zakupów</title>
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-header-wrapper">
+      </div>
+
+      <div class="shopping-list-wrapper" id="shopping-list">
+        <h1>Moja lista zakupów</h1>
+
+        <h3 class="category-name-heading">Pieczywo</h3>
+        <div class="category-section" id="pieczywo"></div>
+
+        <h3 class="category-name-heading">Owoce</h3>
+        <div class="category-section" id="owoce"></div>
+
+        <h3 class="category-name-heading">Warzywa</h3>
+        <div class="category-section" id="warzywa"></div>
+
+        <h3 class="category-name-heading">Higieniczne</h3>
+        <div class="category-section" id="higiena"></div>
+
+        <h3 class="category-name-heading">Mięso</h3>
+        <div class="category-section" id="mieso"></div>
+
+        <h3 class="category-name-heading">Nabiał</h3>
+        <div class="category-section" id="nabial"></div>
+
+        <h3 class="category-name-heading">Inne</h3>
+        <div class="category-section" id="inne"></div>
+
+        <div class="sum-section" id="counters-section">
+          <hr>
+          <h2>RAZEM</h2>
+          <table>
+            <tr>
+              <th>Ilość pozycji</th>
+              <td id="items-counter"></td>
+            </tr>
+
+            <tr>
+              <th>Całkowita ilość sztuk</th>
+              <td id="qty-counter"></td>
+            </tr>
+
+            <tr>
+              <th>Całkowita ilość kg</th>
+              <td id="kg-counter"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="adding-item-wrapper">
+        <h2 id="add-section">Dodaj pozycję</h2>
+        <form id="shop-add" class="adding-item-details">
+          <div class="adding-inputs-wrapper" id="shop-item">
+            <div><label for="#shop-item-name">Nazwa</label></div>
+            <input type="text" id="shop-item-name" placeholder="Ryż" required />
+            <div><label for="#item-category">Kategoria</label></div>
+            <select name="" id="item-category">
+              <option value="pieczywo">Pieczywo</option>
+              <option value="warzywa">Warzywa</option>
+              <option value="owoce">Owoce</option>
+              <option value="higiena">Artykuły higieniczne</option>
+              <option value="mieso">Mięso</option>
+              <option value="nabial">Nabiał</option>
+              <option value="inne">Inne</option>
+            </select>
+            <div><label for="item-qty">Ilość</label></div>
+            <div class="qty-input">
+              <input type="number" id="item-qty" value="1" min="1", max="999">
+              <select name="" id="qtype">
+                <option value="szt">szt</option>
+                <option value="kg">kg</option>
+              </select>  
+            </div>
+          </div>
+          <input type="submit" id="shop-add-btn" value="Dodaj"/>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="shoppingList.js"></script>
+</html>
